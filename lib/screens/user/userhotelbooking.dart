@@ -97,7 +97,7 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                             decoration: BoxDecoration(
                               border: Border(
                                 bottom: BorderSide(
-                                    color: Color(0xFFBA780F).withOpacity(0.6)),
+                                    color: Color(0xFFBA780F)),
                               ),
                             ),
                             child: TextFormField(
