@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Main Application/vendomegroup/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml",
+            "outputFile": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml",
             "map": [
                 {
                     "source": "/home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/5f663b08eec19eef9a9d1af662d9025e/core-1.6.0/res/values-eu/values-eu.xml",
