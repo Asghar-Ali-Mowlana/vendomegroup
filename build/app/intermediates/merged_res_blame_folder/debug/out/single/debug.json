@@ -16,12 +16,12 @@
         "source": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/android/app/src/main/res/drawable-xxhdpi/splash.png"
     },
     {
-        "merged": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/app/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/app/intermediates/res/merged/debug/drawable_background.png.flat",
         "source": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/android/app/src/main/res/drawable/background.png"
+    },
+    {
+        "merged": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/app/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
         "merged": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",

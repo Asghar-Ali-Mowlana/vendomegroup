@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:vendomegroup/screens/loginpage.dart';
-import 'package:vendomegroup/screens/user/userhomepage.dart';
-import 'package:vendomegroup/screens/user/userhotelbooking.dart';
+import 'package:universal_io/io.dart' as u;
+import 'package:firebase_core/firebase_core.dart';
+
+import 'package:vendomegroup/screens/signuppage.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  if (u.Platform.operatingSystem == "android" ||
+      u.Platform.operatingSystem == "ios") {
+    await Firebase.initializeApp();
+  }
   runApp(const MyApp());
 }
 
@@ -20,8 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: UserHomePage(),
+      home: SignUpPage(),
     );
   }
 }
-
