@@ -54,20 +54,28 @@ class _EmailVerificationState extends State<EmailVerification> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF000000),
-      appBar: AppBar(
-        backgroundColor: Color(0xFF000000),
-        title: Text(
-          "SignUp Verification",
-          style: TextStyle(color: Colors.white, fontSize: 24),
+      body: Container(
+          child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(
+                height: 100.0,
+                width: 100.0,
+                child: CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFdb9e1f)),
+                )),
+            SizedBox(
+              height: 100.0,
+            ),
+            Text("An email has been sent to ${user!.email}, please verify",
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.white, fontSize: 16))
+          ],
         ),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Container(
-            child: Text(
-                "An email has been sent to ${user!.email} please verify",
-                style: TextStyle(color: Colors.white, fontSize: 20))),
-      ),
+      )),
     );
   }
 }

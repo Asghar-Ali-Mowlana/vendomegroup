@@ -50,6 +50,7 @@ class _SignUpPageState extends State<SignUpPage>
 
     await firebaseFirestore.collection("users").doc(user.uid).set({
       'uid': user.uid,
+      'role': 'customer',
       'name': name,
       'email': email,
       'username': username,
@@ -190,7 +191,7 @@ class _SignUpPageState extends State<SignUpPage>
                             decoration: InputDecoration(
                               suffixIcon: IconButton(
                                   icon: Icon(
-                                    Icons.account_circle_sharp,
+                                    Icons.person_outline_rounded,
                                     color: Color(0xFFdb9e1f),
                                   ),
                                   onPressed: () {}),
