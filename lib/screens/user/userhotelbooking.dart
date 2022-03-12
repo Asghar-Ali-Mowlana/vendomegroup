@@ -2,8 +2,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:vendomegroup/widgets/header.dart';
-import 'package:vendomegroup/widgets/usernavigationdrawer.dart';
+import 'package:worldsgate/widgets/header.dart';
+import 'package:worldsgate/widgets/usernavigationdrawer.dart';
 
 class UserHotelBooking extends StatefulWidget {
   const UserHotelBooking({Key? key}) : super(key: key);
@@ -26,13 +26,18 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
         context: context,
         initialDateRange: dateRange,
         firstDate: DateTime(1900),
-        lastDate: DateTime(2100));
-    builder:
-    (context, child) => Theme(
-        data: ThemeData.dark().copyWith(
-            colorScheme:
-                ColorScheme.dark().copyWith(primary: Color(0xFF000000))),
-        child: child);
+        lastDate: DateTime(2100),
+        builder: (context, child) => Theme(
+            data: ThemeData().copyWith(
+                colorScheme: const ColorScheme.light(
+                    primary: Color(0xFFBA780F)
+                    surface: Color(0xFFBA780F),
+                    //onSurface: Colors.white,
+                    ),
+                //scaffoldBackgroundColor: const Color(0xFF000000)
+                ),
+            child: child!));
+    
 
     if (newDateRange == null) return;
 
@@ -548,11 +553,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                     children: [
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.end,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45),
                                             child: Text(
                                               "GIO Hotel Apartments - Dubai",
                                               style: TextStyle(
@@ -562,11 +567,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 82.0, top: 2.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45, top: 2.0),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.end,
+                                                  MainAxisAlignment.start,
                                               children: [
                                                 Icon(
                                                   Icons.location_on_outlined,
@@ -731,11 +736,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                     children: [
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.end,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45),
                                             child: Text(
                                               "GIO Hotel Apartments - Dubai",
                                               style: TextStyle(
@@ -745,11 +750,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 82.0, top: 2.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45, top: 2.0),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.end,
+                                                  MainAxisAlignment.start,
                                               children: [
                                                 Icon(
                                                   Icons.location_on_outlined,
@@ -914,11 +919,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                     children: [
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.end,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45),
                                             child: Text(
                                               "GIO Hotel Apartments - Dubai",
                                               style: TextStyle(
@@ -928,11 +933,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 82.0, top: 2.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45, top: 2.0),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.end,
+                                                  MainAxisAlignment.start,
                                               children: [
                                                 Icon(
                                                   Icons.location_on_outlined,
@@ -1097,11 +1102,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                     children: [
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.end,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45),
                                             child: Text(
                                               "GIO Hotel Apartments - Dubai",
                                               style: TextStyle(
@@ -1111,11 +1116,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 82.0, top: 2.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45, top: 2.0),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.end,
+                                                  MainAxisAlignment.start,
                                               children: [
                                                 Icon(
                                                   Icons.location_on_outlined,
@@ -1280,11 +1285,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                     children: [
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.end,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45),
                                             child: Text(
                                               "GIO Hotel Apartments - Dubai",
                                               style: TextStyle(
@@ -1294,11 +1299,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 82.0, top: 2.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45, top: 2.0),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.end,
+                                                  MainAxisAlignment.start,
                                               children: [
                                                 Icon(
                                                   Icons.location_on_outlined,
@@ -1463,11 +1468,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                     children: [
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.end,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45),
                                             child: Text(
                                               "GIO Hotel Apartments - Dubai",
                                               style: TextStyle(
@@ -1477,11 +1482,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 82.0, top: 2.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45, top: 2.0),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.end,
+                                                  MainAxisAlignment.start,
                                               children: [
                                                 Icon(
                                                   Icons.location_on_outlined,
@@ -1646,11 +1651,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                     children: [
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.end,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45),
                                             child: Text(
                                               "GIO Hotel Apartments - Dubai",
                                               style: TextStyle(
@@ -1660,11 +1665,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 82.0, top: 2.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45, top: 2.0),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.end,
+                                                  MainAxisAlignment.start,
                                               children: [
                                                 Icon(
                                                   Icons.location_on_outlined,
@@ -1829,11 +1834,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                     children: [
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.end,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45),
                                             child: Text(
                                               "GIO Hotel Apartments - Dubai",
                                               style: TextStyle(
@@ -1843,11 +1848,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 82.0, top: 2.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45, top: 2.0),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.end,
+                                                  MainAxisAlignment.start,
                                               children: [
                                                 Icon(
                                                   Icons.location_on_outlined,
@@ -2012,11 +2017,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                     children: [
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.end,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45),
                                             child: Text(
                                               "GIO Hotel Apartments - Dubai",
                                               style: TextStyle(
@@ -2026,11 +2031,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 82.0, top: 2.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45, top: 2.0),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.end,
+                                                  MainAxisAlignment.start,
                                               children: [
                                                 Icon(
                                                   Icons.location_on_outlined,
@@ -2195,11 +2200,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                     children: [
                                       Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.end,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45),
                                             child: Text(
                                               "GIO Hotel Apartments - Dubai",
                                               style: TextStyle(
@@ -2209,11 +2214,11 @@ class _UserHotelBookingState extends State<UserHotelBooking> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 82.0, top: 2.0),
+                                            padding: EdgeInsets.only(
+                                                left: MediaQuery.of(context).size.width / 2.45, top: 2.0),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.end,
+                                                  MainAxisAlignment.start,
                                               children: [
                                                 Icon(
                                                   Icons.location_on_outlined,

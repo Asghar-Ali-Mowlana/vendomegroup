@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:vendomegroup/screens/loginpage.dart';
-import 'package:vendomegroup/screens/emailverification.dart';
-import 'package:vendomegroup/screens/user/userhomepage.dart';
+import 'package:worldsgate/screens/loginpage.dart';
+import 'package:worldsgate/screens/emailverification.dart';
+import 'package:worldsgate/screens/user/userhomepage.dart';
 
 class SignUpPage extends StatefulWidget {
   @override

@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.vendomegroup"
+3    package="com.example.worldsgate"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
@@ -12,8 +12,8 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/android/app/src/debug/AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 15-->[com.google.firebase:firebase-auth:21.0.1] /home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
 15-->[com.google.firebase:firebase-auth:21.0.1] /home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:22-76
@@ -33,9 +33,9 @@
 22-->[androidx.core:core:1.6.0] /home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/AndroidManifest.xml:24:18-86
 23        android:debuggable="true"
 24        android:icon="@mipmap/ic_launcher"
-25        android:label="vendomegroup" >
+25        android:label="Worlds Gate" >
 26        <activity
-27            android:name="com.example.vendomegroup.MainActivity"
+27            android:name="com.example.worldsgate.MainActivity"
 28            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
 29            android:exported="true"
 30            android:hardwareAccelerated="true"
@@ -68,31 +68,31 @@
 57            android:value="2" />
 58
 59        <service
-59-->[:firebase_auth] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+59-->[:firebase_auth] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 60            android:name="com.google.firebase.components.ComponentDiscoveryService"
-60-->[:firebase_auth] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+60-->[:firebase_auth] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 61            android:directBootAware="true"
 61-->[com.google.firebase:firebase-common:20.0.0] /home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
 62            android:exported="false" >
 62-->[com.google.firebase:firebase-auth:21.0.1] /home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:76:13-37
 63            <meta-data
-63-->[:firebase_auth] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+63-->[:firebase_auth] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 64                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-64-->[:firebase_auth] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+64-->[:firebase_auth] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 65                android:value="com.google.firebase.components.ComponentRegistrar" />
-65-->[:firebase_auth] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+65-->[:firebase_auth] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 66            <meta-data
-66-->[:cloud_firestore] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+66-->[:cloud_firestore] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 67                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-67-->[:cloud_firestore] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+67-->[:cloud_firestore] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
 68                android:value="com.google.firebase.components.ComponentRegistrar" />
-68-->[:cloud_firestore] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+68-->[:cloud_firestore] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 69            <meta-data
-69-->[:firebase_core] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+69-->[:firebase_core] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 70                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-70-->[:firebase_core] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+70-->[:firebase_core] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 71                android:value="com.google.firebase.components.ComponentRegistrar" />
-71-->[:firebase_core] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+71-->[:firebase_core] /home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 72            <meta-data
 72-->[com.google.firebase:firebase-auth:21.0.1] /home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
 73                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -227,7 +227,7 @@
 141-->[com.google.firebase:firebase-common:20.0.0] /home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
 142            android:name="com.google.firebase.provider.FirebaseInitProvider"
 142-->[com.google.firebase:firebase-common:20.0.0] /home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
-143            android:authorities="com.example.vendomegroup.firebaseinitprovider"
+143            android:authorities="com.example.worldsgate.firebaseinitprovider"
 143-->[com.google.firebase:firebase-common:20.0.0] /home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
 144            android:directBootAware="true"
 144-->[com.google.firebase:firebase-common:20.0.0] /home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43

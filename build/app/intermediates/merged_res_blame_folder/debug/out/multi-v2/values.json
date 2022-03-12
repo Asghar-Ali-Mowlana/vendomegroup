@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
+                {
+                    "source": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/build/app/generated/res/google-services/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,200,283,387,497,617,717",
+                        "endColumns": "144,82,103,109,119,99,76",
+                        "endOffsets": "195,278,382,492,612,712,789"
+                    },
+                    "to": {
+                        "startLines": "126,127,128,129,130,131,132",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "8966,9111,9194,9298,9408,9528,9628",
+                        "endColumns": "144,82,103,109,119,99,76",
+                        "endOffsets": "9106,9189,9293,9403,9523,9623,9700"
+                    }
+                },
                 {
                     "source": "/home/asghar_ali_mowlana/.gradle/caches/transforms-2/files-2.1/ec20f7242759cfe0d6237ced59ef1a02/browser-1.0.0/res/values/values.xml",
                     "from": {
@@ -57,7 +74,7 @@
                     }
                 },
                 {
-                    "source": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/android/app/src/main/res/values/styles.xml",
+                    "source": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/World's Gate Web & Mobile/worldsgate2/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,16",
                         "startColumns": "4,4",
@@ -111,23 +128,6 @@
                         "endLines": "3,12,13,26,27,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,107,133,144,148,149,153,154,155,156,178,185,332,364,401,408",
                         "endColumns": "59,71,87,68,62,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,64,58,58,59,59,59,59,59,59,59,59,59,59,58,59,59,59,59,59,59,59,59,59,59,58,59,59,58,58,58,58,58,58,34,34,54,62,54,57,57,60,62,56,50,49,60,56,65,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24,24",
                         "endOffsets": "221,629,717,1706,1769,1982,2050,2122,2192,2253,2327,2400,2461,2522,2584,2648,2710,2771,2839,2939,2999,3065,3138,3207,3264,3316,3378,3450,3526,3591,3650,3709,3769,3829,3889,3949,4009,4069,4129,4189,4249,4309,4368,4428,4488,4548,4608,4668,4728,4788,4848,4908,4968,5027,5087,5147,5206,5265,5324,5383,5442,5501,5596,5631,5686,5749,5804,5862,5920,5981,6044,6101,6152,6202,6263,6320,6386,6420,6455,6490,6628,9771,10472,10673,10783,10984,11113,11185,11252,12449,12747,21866,23931,25691,26068"
-                    }
-                },
-                {
-                    "source": "/home/asghar_ali_mowlana/Asghar Ali Mowlana/Work/Vendome Group/Vendome Group Application/vendomegroup/build/app/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,200,283,387,497,617,717",
-                        "endColumns": "144,82,103,109,119,99,76",
-                        "endOffsets": "195,278,382,492,612,712,789"
-                    },
-                    "to": {
-                        "startLines": "126,127,128,129,130,131,132",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "8966,9111,9194,9298,9408,9528,9628",
-                        "endColumns": "144,82,103,109,119,99,76",
-                        "endOffsets": "9106,9189,9293,9403,9523,9623,9700"
                     }
                 },
                 {

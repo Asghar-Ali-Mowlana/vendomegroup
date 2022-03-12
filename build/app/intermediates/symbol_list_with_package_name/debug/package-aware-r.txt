@@ -1,4 +1,4 @@
-com.example.vendomegroup
+com.example.worldsgate
 attr activityAction
 attr activityName
 attr alpha

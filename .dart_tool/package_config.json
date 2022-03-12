@@ -146,6 +146,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///home/asghar_ali_mowlana/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.9.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///home/asghar_ali_mowlana/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4",
       "packageUri": "lib/",
@@ -338,7 +344,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2022-03-10T19:35:50.482776Z",
+  "generated": "2022-03-11T11:24:40.778330Z",
   "generator": "pub",
   "generatorVersion": "2.16.1"
 }

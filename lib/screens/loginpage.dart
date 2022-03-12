@@ -1,14 +1,20 @@
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:vendomegroup/screens/signuppage.dart';
-import 'package:vendomegroup/screens/user/userhomepage.dart';
+import 'package:worldsgate/screens/signuppage.dart';
+import 'package:worldsgate/screens/user/userhomepage.dart';
+import 'package:worldsgate/services/routingpage.dart';
+
 
 class LoginPage extends StatefulWidget {
+
+
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage>
-    with SingleTickerProviderStateMixin {
+class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMixin {
   bool _isObscure3 = true;
   bool visible = false;
   final _formkey = GlobalKey<FormState>();
@@ -17,6 +23,9 @@ class _LoginPageState extends State<LoginPage>
 
   AnimationController? _controller;
   Animation<double>? _animation;
+
+  final _auth = FirebaseAuth.instance;
+
 
   @override
   void initState() {
@@ -27,19 +36,27 @@ class _LoginPageState extends State<LoginPage>
     super.initState();
   }
 
+
   @override
   Widget build(BuildContext context) {
     _controller!.forward();
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xFF000000),
+
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
               Container(
                 color: Color(0xFF000000),
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height,
+                width: MediaQuery
+                    .of(context)
+                    .size
+                    .width,
+                height: MediaQuery
+                    .of(context)
+                    .size
+                    .height,
                 child: Center(
                   child: Container(
                     margin: EdgeInsets.all(22),
@@ -51,8 +68,7 @@ class _LoginPageState extends State<LoginPage>
                         children: [
                           Padding(
                             padding: EdgeInsets.all(1.0),
-                            child: FadeTransition(
-                              opacity: _animation!,
+                            child: FadeTransition(opacity: _animation!,
                               child: Image.asset(
                                 "assets/images/logo.jpeg",
                                 height: 300,
@@ -60,39 +76,50 @@ class _LoginPageState extends State<LoginPage>
                               ),
                             ),
                           ),
+
                           SizedBox(
                             height: 40,
                           ),
                           TextFormField(
                             style: TextStyle(color: Colors.white),
                             controller: emailController,
+
                             decoration: InputDecoration(
                               suffixIcon: IconButton(
                                   icon: Icon(
-                                    Icons.email,
-                                    color: Color(0xFFdb9e1f),
-                                  ),
-                                  onPressed: () {}),
+                                    Icons.email, color: Color(0xFFdb9e1f),),
+                                  onPressed: () {
+
+                                  }),
                               hintText: "Enter your email",
                               labelText: "Email",
-                              hintStyle: TextStyle(color: Colors.white70),
-                              labelStyle: new TextStyle(color: Colors.white70),
+                              hintStyle: TextStyle(
+                                  color: Colors.white70
+                              ),
+                              labelStyle: new TextStyle(
+                                  color: Colors.white70
+                              ),
                               enabled: true,
                               enabledBorder: UnderlineInputBorder(
                                 borderSide:
-                                    new BorderSide(color: Colors.white70),
+                                new BorderSide(color: Colors.white70),
+
                               ),
+
+
                               focusedBorder: UnderlineInputBorder(
                                 borderSide:
-                                    new BorderSide(color: Color(0xFFdb9e1f)),
+                                new BorderSide(color: Color(0xFFdb9e1f)),
+
                               ),
+
                             ),
                             validator: (value) {
                               if (value!.length == 0) {
                                 return "Email cannot be empty";
                               }
                               if (!RegExp(
-                                      "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]")
+                                  "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]")
                                   .hasMatch(value)) {
                                 return ("Please enter a valid email");
                               } else {
@@ -113,30 +140,39 @@ class _LoginPageState extends State<LoginPage>
                             obscureText: _isObscure3,
                             decoration: InputDecoration(
                               suffixIcon: IconButton(
-                                  icon: Icon(
-                                    _isObscure3
-                                        ? Icons.visibility
-                                        : Icons.visibility_off,
-                                    color: Color(0xFFdb9e1f),
-                                  ),
+                                  icon: Icon(_isObscure3
+                                      ? Icons.visibility
+                                      : Icons.visibility_off,
+                                    color: Color(0xFFdb9e1f),),
                                   onPressed: () {
                                     setState(() {
                                       _isObscure3 = !_isObscure3;
                                     });
                                   }),
+
+
                               hintText: "Enter your password",
                               labelText: "Password",
-                              hintStyle: TextStyle(color: Colors.white70),
-                              labelStyle: new TextStyle(color: Colors.white70),
+                              hintStyle: TextStyle(
+                                  color: Colors.white70
+                              ),
+                              labelStyle: new TextStyle(
+                                  color: Colors.white70
+                              ),
                               enabled: true,
                               enabledBorder: UnderlineInputBorder(
                                 borderSide:
-                                    new BorderSide(color: Colors.white70),
+                                new BorderSide(color: Colors.white70),
+
                               ),
+
+
                               focusedBorder: UnderlineInputBorder(
                                 borderSide:
-                                    new BorderSide(color: Color(0xFFdb9e1f)),
+                                new BorderSide(color: Color(0xFFdb9e1f)),
+
                               ),
+
                             ),
                             validator: (value) {
                               RegExp regex = new RegExp(r'^.{6,}$');
@@ -159,17 +195,27 @@ class _LoginPageState extends State<LoginPage>
                           ),
                           Center(
                             child: MaterialButton(
+
                               shape: RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(10.0)),
-                                  side: BorderSide(color: Color(0xFFdb9e1f))),
+
+                                  borderRadius: BorderRadius.all(
+                                      Radius.circular(10.0)),
+                                  side: BorderSide(color: Color(0xFFdb9e1f))
+                              ),
+
                               elevation: 5.0,
                               height: 40,
                               onPressed: () {
-                                Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) =>
-                                        // TaskCardWidget(id: user.id, name: user.ingredients,)
-                                        UserHomePage()));
+                                // Navigator.of(context).push(MaterialPageRoute(
+                                //     builder: (context) =>
+                                //     // TaskCardWidget(id: user.id, name: user.ingredients,)
+                                //     UserHomePage(
+                                //
+                                //
+                                //     )));
+
+                                signIn(emailController.text,
+                                    passwordController.text);
                                 setState(() {
                                   visible = true;
                                 });
@@ -182,6 +228,7 @@ class _LoginPageState extends State<LoginPage>
                                 ),
                               ),
                               color: Colors.black,
+
                             ),
                           ),
                           SizedBox(
@@ -193,24 +240,35 @@ class _LoginPageState extends State<LoginPage>
                               children: [
                                 Text(
                                   "Don't have an account? ",
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),
                                 ),
                                 InkWell(
                                   onTap: () {
                                     //should redirect to sign up page!
-                                    Navigator.of(context).push(MaterialPageRoute(
-                                        builder: (context) =>
+                                    Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                            builder: (context) =>
                                             // TaskCardWidget(id: user.id, name: user.ingredients,)
-                                            SignUpPage()));
+                                            SignUpPage(
+
+
+                                            )));
                                   },
+
                                   child: Text(
                                     "Sign up",
-                                    style: TextStyle(color: Color(0xFFdb9e1f)),
+                                    style: TextStyle(
+                                        color: Color(0xFFdb9e1f)
+                                    ),
                                   ),
                                 ),
                               ],
                             ),
                           )
+
+
                         ],
                       ),
                     ),
@@ -222,5 +280,60 @@ class _LoginPageState extends State<LoginPage>
         ),
       ),
     );
+  }
+
+
+  //signing method
+  void signIn(String email, String password) async {
+    //checking the username and password entered
+    if (_formkey.currentState!.validate()) {
+      //if valid this code block will run
+      try {
+        UserCredential userCredential =
+        await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: email,
+          password: password,
+        );
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => RoutePage(),
+          ),
+        );
+        print("Logged in Successfully with ${email} and $password");
+      }
+      //if invalid catch the error
+      on FirebaseAuthException catch (e) {
+        if (e.code == 'user-not-found') {
+          print('No user found for that email.');
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            content: Row(
+              children: const [
+                Icon(
+                  Icons.error_outline,
+                  color: Colors.redAccent,
+                ),
+                SizedBox(width: 20),
+                Expanded(child: Text('No user found for that email.')),
+              ],
+            ),
+          ));
+        } else if (e.code == 'wrong-password') {
+          print('Wrong password provided for that user.');
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            content: Row(
+              children: const [
+                Icon(
+                  Icons.error_outline,
+                  color: Colors.redAccent,
+                ),
+                SizedBox(width: 20),
+                Expanded(child: Text('Wrong password provided for that user.')),
+              ],
+            ),
+          ));
+        }
+      }
+    }
   }
 }
